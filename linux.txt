@@ -16,3 +16,44 @@ it expects by running the command followed by --help
      <!-- cd -> to move inside a folder -->
     
     cd : this can help you to move into a folder (cd folder_name)  and move out of a folder (cd ..).
+    cd.. : if you want to jump one folder back from the current directory
+    cd../..  : if you want to make two jumps back from the current directory
+    cd ~ : From any directory this will help you to come back to the home directory
+    cd directory1/directory2/ : we can actually move into internal subdirectories directly by seperating them with a forward slash / .
+
+    Note : 
+
+    ~ -> this tilda refers to the home directory Ex: /Users/sumitmishra .
+    / -> this slash leads you to root directory
+    home directory is sub directory of the root directory.
+    Relative path : It describes location of a file/folder w.r.t current folder. Ex:- cd /Users/sumitmishra/habit_clone .
+    Absolute path : It describes location of a file/folder w.r.t home directory or root  directory. Ex:- cd /Users/sumitmishra/habit_clone .
+   
+    cd / : / is the root directory which / is the parent of all directory and beyond this no directory exist.
+    cd ~ : ~ is the home directory which is the parent of all user directory.
+    cat : this command helps us to read the content of the file .
+
+    When you give absolute path of a file or folder that means you will give the whole path of that file or folder, whereas in relative path you do jumps w.r.t to the current folder.
+
+    clear : clear the working space by actually moving you to top of the current shell.
+
+    ls : With the help of ls you can list of all of the files/folder in the current shell
+  ls : you can print the content of the current directory we are in. All the fields and current sub directories will be printed. 
+  ls -l : lists down more details about file such as owner permission, date etc.
+  ls -lh : works like ls -l but also give size of the file.
+  ls -a : lists down all the files including hidden files.
+
+  Create files and folders
+
+  mkdir <foldername> : this helps us to create a new folder 
+  touch <filename> : this helps us to create a new file .
+  cat <filename> : prints the whole contents of a file.
+  rm <filename> : this helps us to remove a file.
+  rmdir <subfoldername> : this helps us to delete a subfolder (but subfolder should be empty if subfolder is not empty then it will not allow us to delete that subfolder).
+  touch <subfoldername/filename.txt> : this helps us to create a file directly from outside a subfolder.
+  rm -r <foldername> : this helps us to delete a folder and all its subdirectories (even subfolder contains any sub0subfolder or subfiles).
+        the -r flag enables rm to recursively delete all subfolders and the content of all subfolder and then delete the folder.
+
+  rm -rf <foldername> : this helps us to delete a folder and all its subdirectories even without given any warning so we should avoid to use it because if make a mistake and do (rm -rf / ) then / is redirectting to root directory which can lead to delate all folders and also operating system of the system so we shouldn't use it
+
+  Lecture 8 ended.
