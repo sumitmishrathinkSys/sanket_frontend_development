@@ -1,0 +1,76 @@
+vim test.sh  // to check vim is installed in the system 
+:qa then Enter to exit from vim 
+ OR
+ press esc then :q then enter  to exit from vim 
+
+ vim new_file.txt  // To create a new file and open it. if it is already exist then it will simply open it else it will create the file then open it
+ or 
+ vi new_file.txt // To create a new file and open it. if it is already exist then simply open it.
+
+Press i to write or insert any thing 
+Press esc to exit from insert mode
+
+To save the changes in vim 
+press esc then :wq then enter  to save the changes and exit from vim 
+
+
+vim <filename>  - this will create a new file (if it doesn't exist) and then open it in vim editor in the normal mode.
+In normal mode we can't do changes to the file but we can read it and navigate it. You can also use vi <filename> to do the same thing.
+
+Now after opening vim if you want to start making changes you need to first of all make it change the mode from normal to insert mode.
+To go in the insert mode we can press i . if you want to come back to the normal mode then press esc .
+
+esc + :q -> if you want to exit a file we can do this.
+esc + :q! -> if file has some changes and we want to exit without saving changes to the file.
+esc + :wq -> if file has some changes and we want to save it and then exit.
+
+In vim mode if you want to navigate to any line (up or down)  or left or right then you can use arrow key to navigate.
+
+Apart from the arrow (up, down, left and right) keys we have some other ways to navigate to any line in normal mode.
+l : You can move the cursor right in normal mode
+h : You can move the cursor left in normal mode
+j : You can move the cursor down in normal mode
+k : You can move the cursor up in normal mode
+
+You can use normal left right up down arrow keys as well to navigate.
+
+dd : In normal mode, if you press dd then it will delete the line whatever line is your cursor at, it will delete that whole line.
+dw : In normal mode, if you press dw then it will delete the word whatever word is your cursor at
+gg : In normal mode, if you press gg you will redirect to left top of the vim editor.
+G : In normal mode, if you press G you will redirect to bottom line of the vim editor.
+x : In normal mode, if you press x then it will delete the character whatever character is your  cursor at.
+w : In normal  mode, if you press w then it will move the cursor to the next word.
+2w : In normal  mode, if you press ww then it will move the cursor to the next to next word. (2 words jump).
+d2w : In normal mode, if you press d2w1 then it will delete two words.
+:%s/foo/bar/ : To replace all occurrence of foo with bar.
+yw : In normal mode, if you press yw it will copy the word at which  your cursor is.
+yy  : In normal mode, if you press yy it will copy the line at which your cursor is.
+p :  In normal mode, if you press p it will paste the copied line or word.
+
+vim ~/.vimrc : this will open a vimrc file. 
+
+Then to set a good ui and theme and adding line number paste the below content 
+
+:syntax on
+
+set number
+
+set autoindent
+
+filetype plugin indent on
+
+set tabstop=4 softtabstop=4
+
+set shiftwidth=4
+
+colorscheme murphy
+
+:se mouse+=a
+
+
+Or you can go to https://github.com/singhsanket143/My-Vim-Config to get this content
+
+
+
+
+
