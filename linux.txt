@@ -1,0 +1,18 @@
+<!-- LINUX -->
+
+REPL -> Read Evaluate Print Loop
+
+Note : - For any linux command you can actually check the usage and different input flags 
+it expects by running the command followed by --help
+
+<!-- To Know in which folder you are there is a command pwd -->
+  <!-- pwd -->
+<!-- pwd : this represnt what is the current directory we are correctly at  -->
+  <!-- pwd --help  working in linux not in mac-->
+   <!-- Run  man pwd  in mac -->     man pwd
+    <!-- ls is going to print whole directory content  -->
+     <!-- ls : you can print the content of the current directory we are in. All the fields and current sub directories will be printed.  -->
+
+     <!-- cd -> to move inside a folder -->
+    
+    cd : this can help you to move into a folder (cd folder_name)  and move out of a folder (cd ..).
