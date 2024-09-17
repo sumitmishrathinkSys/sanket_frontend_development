@@ -56,4 +56,80 @@ it expects by running the command followed by --help
 
   rm -rf <foldername> : this helps us to delete a folder and all its subdirectories even without given any warning so we should avoid to use it because if make a mistake and do (rm -rf / ) then / is redirectting to root directory which can lead to delate all folders and also operating system of the system so we shouldn't use it
 
-  Lecture 8 ended.
+  
+  To get the last some of any file without opening it directly we can use tail.
+
+  tail <filename> : this helps us to print some last lines of the file.
+  tail -n 3 <filename> : this helps us to print last 3 lines of the file.
+  tail -n 5 new_file.txt :  this helps us to print last 5 lines of the file. 
+  so we can enter number (3,5, or any number) of line we want to print.
+  tail -f <filename> : this helps us to print the last line of the file and if you don't want to exit.
+
+  Why tail is important? Why you shouldn't do cat instead of tail?
+  Suppose if you are looking a log file, a log file can have thousands or lakh numbers of line, so if you do cat , it will start printing lakhs number of lines in your terminal. 
+  And if actually you are debugging then it doesn't make much sense to print lakhs number of lines in your terminal so just print the last logs.
+
+
+  Apart from the tail there is also head to print the starting lines of the terminal.
+  
+  head <filename> : this helps us to print some start lines of the file.
+  head -n 3 <filename> : this helps us to print start 3 lines of the file.
+  head -n 5 new_file.txt :  this helps us to print start 5 lines of the file. 
+  so we can enter number (3,5, or any number) of line we want to print.
+  head -f <filename> : this helps us to print the start line of the file and if you don't want to exit.
+
+  To print some thing on the terminal just like a print command in any language
+  echo Sumit(Any word) : this helps us to print the string on the terminal.
+
+  if you want to dump the result of echo command into any file and don't want to print it then.
+  echo "Sanket Singh" > dump.txt   - Now the result of echo "Sanket Singh" is dumped into dump.txt file
+
+  if you want to print the content of dump.txt then
+  cat dump.txt 
+
+  so this is a cool dumping technique that you can use if any point of time you want to dump bunch of logs inside a file and you don't want to just open it 
+
+
+  Piping 
+
+  To perform searching on the terminal like whether it is file or logs , you can perform searching by using ( | grep) command. 
+  This | pipe helps us to take the output of one command and pass it as input of the next command.
+  Even if you know just the starting words or letter (substring) you can use that to search.
+  So it's going to take your less time in searching that are definitely very useful.
+
+  ls | grep searchingwords  : It will helps list down all the list of directories then | grip will help to search the word that we have mentioned from the output of ls (list)
+  ls | grep python : this will actually pass the output of ls an input to grep, grep does a substring search of python on the output of ls.
+  
+  ps aux is actually going to list all of the process that are actually running in your system.
+  ps aux | grep searchingwords : It will help us to search from the output of list of process that are actually running in your system and whatever searchingwords you will enter it will filter out from the list and print it on the terminal.
+
+  Sometimes what happens you wrote a command and you want to dump the output of that command into some file
+  For example : you actually runs a command and there are bunch of logs that are coming and you want to dump that logs into a particular file.
+  Because it becomes very hard to read here or suppose you want to send this file to someone that this is the result of my command so what you can do is 
+
+  ls > output_result.txt : Dump  the  output of ls command into output_result.txt file.
+  cat output_result.txt  :  Now you can see the output of ls command that is dumped into output_result.txt file.
+  ls > new.txt : whatever the result of ls will be dumped into new.txt, nothing will printed on the console.
+  if new.txt has already some content then that will be replaced.
+
+  pwd >  output_result.txt : Dump  the  output of pwd command into output_result.txt file.
+  cat output_result.txt  :  Now you can see the output of pwd command that is dumped 
+
+  ls >> output_result.txt : It will append the output of ls into the  output_result.txt file so the previous content will append with the current ouptut of ls. (so whatever the content of output_result.txt is also present and after that the result of ls is also appended )
+  so nothing is getting replaced you are just appending the your data in a file.
+  ls >> new.txt : whatever the result of ls will be dumped into new.txt, nothing will printed on the console.
+  if new.txt has already some content then the new content will be appended.
+
+  To run any file from the command line 
+  For Ex: if you want to run a C++ file then ,
+
+  g++ filename.cpp --std=c++14 -o run : This command will compile the file and create an executable file 
+  
+  ./run : This command will run the executable file.
+
+   g++ filename.cpp --std=c++14 -o run && ./run : This command will compile the file and create an executable file and then run executable file.
+
+
+  <command1> &&  <command2> : This is a logical AND operator. It will execute command2 only if command one has no error.
+
+  Now suppose if you want to copy a file then you can use cp command
