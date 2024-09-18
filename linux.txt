@@ -132,4 +132,38 @@ it expects by running the command followed by --help
 
   <command1> &&  <command2> : This is a logical AND operator. It will execute command2 only if command one has no error.
 
-  Now suppose if you want to copy a file then you can use cp command
+  Now suppose if you want to copy a file and paste into another file
+  
+  cp file1 file2 : copies the content of file1 to file2
+  cp old_file.txt new_file.txt  : This command will copy the old_file.txt and paste it into new_file.txt
+
+  cp test.txt folder_name1/new_file.txt :  This command will copy the test.txt and paste it into folder_name/new_file.txt .
+  cp folder1/test.txt folder2/new_file.txt : This command will copy the content from folder1/test.txt and paste  it into folder2/new_file.txt.
+
+
+  Now suppose if you want to move a file and paste into another file and also rename the file you can use mv command
+  cp file1 file2 : moves(cut paste) the content of file1 to a new position as file2. This can also helps us to rename a file.
+
+  mv old_file.txt new_file.txt  : This command will rename the old_file.txt to new_file.txt
+  movement can be done in the same file also or we can use it for rename any file.
+
+  mv test.txt folder_name1/new_file.txt :  This command will move the test.txt to folder_name/new_file.txt .
+  mv folder1/test.txt folder2/new_file.txt : This command will move the content from folder1/test.txt to folder2/new_file.txt.
+
+  To create a zip file using command 
+  tar -cf archive.zip new_file.txt new_test_file.txt second.txt  : This command will create a zip file with the name of archive.zip (you can name anything instead of archive ) and also you can add multiple files (as many as you want to compress) into it.
+  
+  tar command is actually start adding it to a zip and -cf command is actually enables to get all of the files. But it doesn't compress anything.
+  But if you want to compress the files and then bind them into the zip then you can use -zcf command .
+  tar -zcf archive.zip new_file.txt new_test_file.txt second.txt  : This command will  create a zip file with the name of archive.zip (you can name anything instead of archive ) and  also you can add multiple files (as many as you want to compress) into it and also compress the all files.
+
+  If you want to see the content of archive files , it is not going to expand or extract the content then you can use below command.
+  tar -tf archive.zip : This command will show you the content of archive.zip file.
+  OR 
+  tar -xvzf archive.zip : This command will show you the content of archive.zip file.
+
+  If you want to extract the content of any zip file then  you can use below command.
+  tar -xf archive.zip -C extract : This command will extract the content of archive.zip file. (But you need to make sure in whatever folder you want to extract the zip file it should be present else you need to create that folder then you can extract the zip file into it)
+
+
+
